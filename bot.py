@@ -14,7 +14,8 @@ from telegram.ext import (
 )
 
 # ================= CONFIG =================
-TOKEN = "8596835385:AAHGc8TsSRhhHtXtbv0jhwqVODQBbU-yp6k"
+import os
+TOKEN = os.getenv("BOT_TOKEN")
 
 REFERENCE, WAIT_TEST = range(2)
 
